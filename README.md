@@ -7,8 +7,8 @@
 - ✅ Mac :brew install ffmpeg
 
 **Running Golang**
-```go get```
-```go run main.go```
+- ```go get```
+- ```go run main.go```
 > Sample videos available localy in **storage/videos** folder
 
 ## Caching Strategy (Design Explanation)
