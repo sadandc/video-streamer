@@ -2,20 +2,19 @@
 
 ## How to Run
 **Install Ffmpeg**
-✅ Windows : winget install ffmpeg
-✅ Linux : sudo apt install ffmpeg
-✅ Mac :brew install ffmpeg
+- ✅ Windows : winget install ffmpeg
+- ✅ Linux : sudo apt install ffmpeg
+- ✅ Mac :brew install ffmpeg
 
 **Running Golang**
-```go run main.go
+```go run main.go```
 > Sample videos available localy in **storage/videos** folder
 
 ## Caching Strategy (Design Explanation)
 
 ✅ **Step 1 — Cache Location Check**  
 - When a request comes in, hash the `location` (using sha256) to generate a unique cache key  
-  Example:
-  - Check if this transcoded video already exists in a local `storage/cache` folder.
+- Check if this transcoded video already exists in a local `storage/cache` folder.
 
 ✅ **Step 2 — Serve from Cache**  
 - If the file is found in the cache folder, serve it directly with streaming to avoid FFmpeg overhead.
