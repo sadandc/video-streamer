@@ -8,7 +8,8 @@
 
 **Running Golang**
 - ```go get```
-- ```go run main.go```
+- ```go run main.go -> localhost:8080```
+- ```Example route : localhost:8080/video?s=sample_1280x720_surfing_with_audio.flv```
 > Sample videos available localy in **storage/videos** folder
 
 ## Caching Strategy 
