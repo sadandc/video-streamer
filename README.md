@@ -11,7 +11,7 @@
 - ```go run main.go```
 > Sample videos available localy in **storage/videos** folder
 
-## Caching Strategy (Design Explanation)
+## Caching Strategy 
 
 ✅ **Step 1 — Cache Location Check**  
 - When a request comes in, hash the `location` (using sha256) to generate a unique cache key  
